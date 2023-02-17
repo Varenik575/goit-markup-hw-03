@@ -53,9 +53,9 @@ a {
 
 body { /*BODY*/
     color: var(--text);
+    background-color: var(--white);
 
     font-family: "Roboto", sans-serif;
-    font-style: normal;
 
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -154,10 +154,6 @@ body { /*BODY*/
 
 /*----------------- navigation panel ------------ */
 .header-section {
-    background-color: var(--white);
-
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid var(--accent)
 }
 
@@ -179,11 +175,14 @@ body { /*BODY*/
 }
 
 .nav-link {
-font-weight: 500;
-color: var(--dark);
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    color: var(--dark);
 }
 .nav-link:hover {
-    color: var(--primary-brand);
+    color: var(--pressed);
 }
 .nav-link:active {
 color: var(--pressed);
@@ -195,14 +194,14 @@ color: var(--pressed);
 }
 
 .mail-link:hover {
-    color: var(--primary-brand);
+    color: var(--pressed);
 }
 .mail-link:active {
     color: var(--pressed);
 }
 
 .tel-link:hover {
-    color: var(--primary-brand);
+    color: var(--pressed);
 }
 .tel-link:active {
     color: var(--pressed);
@@ -254,8 +253,7 @@ color: var(--pressed);
 /*-------- advantages section ------------ */
 
 .advantages-section {
-   padding-top: 120px;
-   padding-bottom: 60px; 
+   padding-top: 120px; 
 }
 .advantages-list {
     display: flex;
@@ -272,8 +270,8 @@ color: var(--pressed);
 
 /*-------- services ("What are We Doing") section ------------ */
 .services-section {
-padding-top: 60px;
-padding-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .services-section > .container > .section-subtitle {
@@ -340,6 +338,7 @@ background-color: var(--white);
 }
 
 .footer-section > .container > .logo-footer {
+    display: block;
     margin-bottom: 16px;
 
 }
